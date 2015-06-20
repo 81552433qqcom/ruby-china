@@ -16,7 +16,7 @@ GIT
       rake (~> 10.4)
 
 GEM
-  remote: https://ruby.taobao.org/
+  remote: http://rubygems-china.oss.aliyuncs.com/
   specs:
     actionmailer (4.2.2)
       actionpack (= 4.2.2)
@@ -470,3 +470,6 @@ DEPENDENCIES
   social-share-button (= 0.1.5)
   uglifier
   will_paginate (= 3.0.7)
+
+BUNDLED WITH
+   1.10.4
