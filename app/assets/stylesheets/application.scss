@@ -202,7 +202,10 @@ a { color: $blue; }
 
 .alert-success { background: $greenLabel; color: $greenLabelText; }
 .alert-info { background: $blueLabel; color: $blueLabelText; }
-.alert-warning { background: $yellowLabel; color: $yellowLabelText; }
+.alert-warning {
+  background: $yellowLabel; color: $yellowLabelText;
+  hr { border-color: #DAC264 !important; }
+}
 .alert-danger { background: $redLabel; color: $redLabelText; }
 
 .form-group {
@@ -234,12 +237,12 @@ textarea.form-control:focus { padding: 6px; }
   .nav-pills>li>a {
     border-radius: 0px;
     padding: 3px 13px;
-    background-color: $gray;
-    border-bottom: 1px solid $grayDark;
+    background-color: $grayLabel;
+    color: $grayLabelText;
   }
   .nav-pills>li.active>a:link,
   .nav-pills>li.active>a:visited,
-  .nav-pills>li.active>a:hover { background-color: $blueLight; border-color: $blueDark; }
+  .nav-pills>li.active>a:hover { background-color: #D5DCE1; color: $black; }
 }
 form {
   #preview { min-height: 500px; overflow-y: scroll; }
@@ -276,6 +279,7 @@ form {
     border-bottom:1px solid #D5DCDB;
     transition: none;
     padding-bottom: 7px;
+    border-radius: 0;
   }
 }
 
@@ -764,6 +768,7 @@ a.followed {
     overflow: auto;
     border-radius: 0px;
     code {
+      display: block;
       line-height: 150%;
       padding: 0!important;
       font-size: 12px!important;
